@@ -1,0 +1,30 @@
+basics:
+  name: "Ikram"
+  email: "ikramgryach@gmail.com"
+  summary: "Étudiante en cybersécurité passionnée par le développement et la sécurité numérique."
+
+skills:
+  - name: "Programmation"
+    keywords: ["Python", "C", "JavaScript"]
+  - name: "Web"
+    keywords: ["HTML", "CSS", "Hugo"]
+  - name: "Sécurité"
+    keywords: ["Pentesting", "Cryptographie", "Analyse"]
+projects:
+  - name: "SafeShare"
+    url: "https://github.com/owncloud/core"
+    description: "Développement d’une plateforme collaborative sécurisée pour le partage de fichiers avec contrôle d’accès."
+  - name: "Détection de Ransomwares"
+    url: "https://www.microsoft.com/en-us/security/blog/2023/01/12/detecting-ransomware-attacks-with-machine-learning/"
+    description: "Projet de Data Science pour améliorer la détection de menaces par génération de données synthétiques."
+  - name: "IoT : Système d’irrigation automatisé"
+    url: "https://thingsboard.io/docs/tutorials/iot-irrigation-system/"
+    description: "Utilisation de ThingsBoard et capteurs pour automatiser et notifier l’irrigation."
+  - name: "TIPE – Application de la valeur de Shapley en IA"
+    url: "https://christophm.github.io/interpretable-ml-book/shap.html"
+    description: "Explication des décisions des modèles d’IA à l’aide de la valeur de Shapley."
+  - name: "Portfolio Hugo"
+    url: "https://themes.gohugo.io/theme/hugo-profile/"
+    description: "Développement d’un site personnel statique pour présenter mes projets et mes compétences."
+
+

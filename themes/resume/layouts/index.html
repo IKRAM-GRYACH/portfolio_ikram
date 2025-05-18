@@ -1,0 +1,34 @@
+
+{{ define "main" }}
+
+<img src="/images/photo.png" alt="Photo d'Ikram" class="intro-img" />
+
+<section id="intro">
+  <h2>Bienvenue sur le portfolio de {{ .Site.Data.resume.basics.name }}</h2>
+  <p>{{ .Site.Data.resume.basics.summary }}</p>
+</section>
+
+<section id="competences">
+  <h2>Compétences</h2>
+  <ul>
+    {{ range .Site.Data.resume.skills }}
+    <li><strong>{{ .name }} :</strong> {{ delimit .keywords ", " }}</li>
+    {{ end }}
+  </ul>
+</section>
+
+<section id="projets">
+  <h2>Projets</h2>
+  <ul>
+    {{ range .Site.Data.resume.projects }}
+    <li><a href="{{ .url }}" class="project-link" target="_blank" rel="noopener">{{ .name }}</a> - {{ .description }}</li>
+    {{ end }}
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email : <a href="mailto:{{ .Site.Data.resume.basics.email }}">{{ .Site.Data.resume.basics.email }}</a></p>
+</section>
+
+{{ end }}

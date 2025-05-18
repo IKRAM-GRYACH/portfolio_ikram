@@ -1,0 +1,5 @@
+
+baseURL = "http://example.org/"
+languageCode = "fr-fr"
+title = "Portfolio d'Ikram"
+theme = "resume"

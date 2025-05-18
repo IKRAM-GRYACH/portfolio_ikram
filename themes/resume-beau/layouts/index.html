@@ -1,0 +1,23 @@
+
+{{ define "main" }}
+<h1>Bienvenue sur le portfolio de {{ .Site.Data.resume.basics.name }}</h1>
+<p>{{ .Site.Data.resume.basics.summary }}</p>
+
+<h2>Compétences</h2>
+<ul>
+  {{ range .Site.Data.resume.skills }}
+  <li><strong>{{ .name }} :</strong> {{ delimit .keywords ", " }}</li>
+  {{ end }}
+</ul>
+
+<h2>Projets</h2>
+<ul>
+  {{ range .Site.Data.resume.projects }}
+  <li><a href="{{ .url }}">{{ .name }}</a> - {{ .description }}</li>
+  {{ end }}
+</ul>
+
+<h2>Contact</h2>
+<p>Email : <a href="mailto:{{ .Site.Data.resume.basics.email }}">{{ .Site.Data.resume.basics.email }}</a></p>
+
+{{ end }}
